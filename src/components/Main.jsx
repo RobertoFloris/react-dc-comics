@@ -1,3 +1,10 @@
+import imgDigital from "../assets/img/buy-comics-digital-comics.png"
+import imgMerchandise from "../assets/img/buy-comics-merchandise.png"
+import imgSubscription from "../assets/img/buy-comics-subscriptions.png"
+import imgShop from "../assets/img/buy-comics-shop-locator.png"
+import imgVisa from "../assets/img/buy-dc-power-visa.svg"
+import logoBg from "../assets/img/dc-logo-bg.png"
+
 const Main = () => {
   return (
     <main>
@@ -12,11 +19,36 @@ const Main = () => {
         <div>
           <div className="container">
             <ul>
-              <li><a href="#">DIGITALS COMICS</a></li>
-              <li><a href="#">DC MERCHANDISE</a></li>
-              <li><a href="#">SUBSCRIPTION</a></li>
-              <li><a href="#">COMIC SHOP LOCATOR</a></li>
-              <li><a href="#">DC POWER VISA</a></li>
+              <li>
+                <a href="#">
+                  <img src={imgDigital} alt="" />
+                  <span>DIGITALS COMICS</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src={imgMerchandise} alt="" />
+                  <span>DC MERCHANDISE</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src={imgSubscription} alt="" />
+                  <span>SUBSCRIPTION</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src={imgShop} alt="" />
+                  <span>COMIC SHOP LOCATOR</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src={imgVisa} alt="" />
+                  <span>DC POWER VISA</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -62,7 +94,7 @@ const Main = () => {
             </ul>
           </div>
           <div>
-            <img src="" alt="" />
+            <img src={logoBg} alt="logoBg" />
           </div>
         </div>
       </section>

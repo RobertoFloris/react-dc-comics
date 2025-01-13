@@ -10,7 +10,7 @@ body {
 
 
 header {
-  height: 100px;
+  height: 150px;
 }
 
 .container {
@@ -39,7 +39,7 @@ footer ul {
   height: 70%;
 }
 
-img {
+header img {
   height: 100%;
 }
 
@@ -51,7 +51,7 @@ header a {
 
 .active,
 .headerList a:hover {
-  padding-bottom: 35px;
+  padding-bottom: 60px;
   border-bottom: 5px solid #0282F9;
 }
 
@@ -62,12 +62,12 @@ h2 a {
 }
 
 main {
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 300px);
   color: white;
 }
 
 main section>div {
-  height: 100px;
+  height: 150px;
 }
 
 main section:first-child>div:first-child {
@@ -75,7 +75,19 @@ main section:first-child>div:first-child {
 }
 
 main section:first-child>div:last-child {
+  position: relative;
+  z-index: 1;
   background-color: #0282F9;
+}
+
+main section:first-child a {
+  display: flex;
+  align-items: center;
+}
+
+main section:first-child a img {
+  height: 40px;
+  margin: 10px;
 }
 
 main a {
@@ -83,7 +95,7 @@ main a {
 }
 
 main section:last-child {
-  height: calc(100vh - 400px);
+  height: calc(100vh - 600px);
   width: 100%;
   background-image: url("../src/assets/img/footer-bg.jpg");
   background-repeat: no-repeat;
@@ -99,7 +111,9 @@ main section:last-child {
 }
 
 footer {
-  height: 100px;
+  position: relative;
+  z-index: 1;
+  height: 150px;
   background-color: #303030;
 }
 
