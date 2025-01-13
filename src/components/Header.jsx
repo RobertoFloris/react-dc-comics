@@ -1,14 +1,16 @@
+import logo from "../assets/img/dc-logo.png"
+
 const Header = () => {
   return (
     <header>
       <div className="container">
-        <div>
-          LOGO
+        <div className="logo">
+          <img src={logo} alt="Logo" />
         </div>
         <div>
-          <ul>
+          <ul className="headerList">
             <li><a href="#">CHARACTERS</a></li>
-            <li><a href="#">COMICS</a></li>
+            <li><a className="active" href="#">COMICS</a></li>
             <li><a href="#">MOVIES</a></li>
             <li><a href="#">TV</a></li>
             <li><a href="#">GAMES</a></li>

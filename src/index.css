@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
 header {
   height: 100px;
 }
@@ -30,8 +35,28 @@ footer ul {
   list-style: none;
 }
 
+.logo {
+  height: 70%;
+}
+
+img {
+  height: 100%;
+}
+
 header a {
-  color: #1C1C1C;
+  font-size: small;
+  color: rgb(75, 75, 75);
+  font-weight: bold;
+}
+
+.active {
+  padding-bottom: 37px;
+  border-bottom: 5px solid #0282F9;
+}
+
+.headerList a:hover {
+  padding-bottom: 37px;
+  border-bottom: 5px solid #0282F9;
 }
 
 ul li a,
