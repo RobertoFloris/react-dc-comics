@@ -1,3 +1,9 @@
+import facebook from "../assets/img/footer-facebook.png"
+import twitter from "../assets/img/footer-twitter.png"
+import youtube from "../assets/img/footer-youtube.png"
+import pinterest from "../assets/img/footer-pinterest.png"
+import periscope from "../assets/img/footer-periscope.png"
+
 const Footer = () => {
   return (
     <footer>
@@ -8,18 +14,38 @@ const Footer = () => {
 
         <div className="flex">
 
-          <div>
+          <div className="followUs">
             <h3>FOLLOW US</h3>
           </div>
 
 
           <div>
             <ul>
-              <li><a href="#">F</a></li>
-              <li><a href="#">T</a></li>
-              <li><a href="#">Y</a></li>
-              <li><a href="#">P</a></li>
-              <li><a href="#">P</a></li>
+              <li>
+                <a href="#">
+                  <img src={facebook} alt="facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src={twitter} alt="twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src={youtube} alt="youtube" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src={pinterest} alt="pinterest" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src={periscope} alt="periscope" />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
