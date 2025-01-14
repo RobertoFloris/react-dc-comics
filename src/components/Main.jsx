@@ -5,14 +5,24 @@ import imgShop from "../assets/img/buy-comics-shop-locator.png"
 import imgVisa from "../assets/img/buy-dc-power-visa.svg"
 import logoBg from "../assets/img/dc-logo-bg.png"
 
-const Main = () => {
+const Main = (props) => {
+
+  const { comics } = props;
+
+
   return (
     <main>
       <section>
 
         <div>
           <div className="container">
-            <h2>&lt;-- Content goes here --&gt;</h2>
+            <ul>
+              {comics.map(item => (
+                <li key={item.id}>
+                  <a href="#">{item.title}</a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
