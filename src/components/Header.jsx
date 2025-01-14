@@ -1,6 +1,7 @@
 import logo from "../assets/img/dc-logo.png"
 
-const Header = () => {
+const Header = (props) => {
+  const { headerList } = props;
   return (
     <header>
       <div className="container">
@@ -9,16 +10,11 @@ const Header = () => {
         </div>
         <div>
           <ul className="headerList">
-            <li><a href="#">CHARACTERS</a></li>
-            <li><a className="active" href="#">COMICS</a></li>
-            <li><a href="#">MOVIES</a></li>
-            <li><a href="#">TV</a></li>
-            <li><a href="#">GAMES</a></li>
-            <li><a href="#">COLLECTIBLES</a></li>
-            <li><a href="#">VIDEOS</a></li>
-            <li><a href="#">FANS</a></li>
-            <li><a href="#">NEWS</a></li>
-            <li><a href="#">SHOP</a></li>
+            {headerList.map((item, index) => (
+              <li key={index}>
+                <a className={item.isActive ? "active" : ""} href="#">{item.name}</a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

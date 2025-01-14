@@ -5,6 +5,8 @@ import imgShop from "../assets/img/buy-comics-shop-locator.png"
 import imgVisa from "../assets/img/buy-dc-power-visa.svg"
 import logoBg from "../assets/img/dc-logo-bg.png"
 
+
+
 const Main = (props) => {
 
   const { comics } = props;
