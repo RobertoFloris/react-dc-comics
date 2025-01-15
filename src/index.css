@@ -63,8 +63,25 @@ main {
 }
 
 .jumbotron {
-  background-image: url("/public/img/jumbotron.jpg");
+  background-image: url("/img/jumbotron.jpg");
   height: 400px;
+}
+
+.containerCard {
+  ul {
+    flex-wrap: wrap;
+  }
+}
+
+.card {
+  margin: 20px 10px;
+  height: 250px;
+  width: 180px;
+
+  img {
+    height: 180px;
+    width: 100%;
+  }
 }
 
 .blueBand {
