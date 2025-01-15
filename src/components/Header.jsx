@@ -1,12 +1,10 @@
-import logo from "../assets/img/dc-logo.png"
-
 const Header = (props) => {
   const { headerList } = props;
   return (
     <header>
       <div className="container">
         <div className="logo">
-          <img src={logo} alt="Logo" />
+          <img src="img/dc-logo.png" alt="Logo" />
         </div>
         <div>
           <ul className="headerList">

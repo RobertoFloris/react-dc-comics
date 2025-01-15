@@ -10,7 +10,7 @@ body {
 
 
 header {
-  height: 150px;
+  height: 120px;
 }
 
 .container {
@@ -47,7 +47,7 @@ header a {
 
 .active,
 .headerList a:hover {
-  padding-bottom: 60px;
+  padding-bottom: 45px;
   border-bottom: 5px solid #0282F9;
 }
 
@@ -58,44 +58,49 @@ h2 a {
 }
 
 main {
-  min-height: calc(100vh - 300px);
+  background-color: #1C1C1C;
   color: white;
 }
 
-main section>div {
-  height: 150px;
+.jumbotron {
+  background-image: url("/public/img/jumbotron.jpg");
+  height: 400px;
 }
 
-main section:first-child>div:first-child {
-  background-color: #1C1C1C;
-}
-
-main section:first-child>div:last-child {
+.blueBand {
   position: relative;
   z-index: 1;
+  height: 120px;
   background-color: #0282F9;
-}
 
-main section:first-child a {
-  display: flex;
-  align-items: center;
-}
+  a {
+    display: flex;
+    align-items: center;
 
-main section:first-child a img {
-  height: 40px;
-  margin: 10px;
+    img {
+      height: 40px;
+      margin: 10px;
+    }
+  }
 }
 
 main a {
   color: white;
 }
 
-main section:last-child {
-  height: calc(100vh - 600px);
-  width: 100%;
-  background-image: url("../src/assets/img/footer-bg.jpg");
+.bgFooter {
+  background-image: url("img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
+
+  a {
+    color: rgb(124, 124, 124);
+    font-weight: bold;
+    font-size: small;
+    padding: 0;
+    padding-bottom: 20px;
+  }
 }
 
 .link {
@@ -107,9 +112,6 @@ main section:last-child {
 }
 
 footer {
-  position: relative;
-  z-index: 1;
-  height: 150px;
   background-color: #303030;
 }
 
@@ -133,4 +135,9 @@ button {
 h3 {
   color: #0282F9;
   margin-right: 20px;
+}
+
+.social {
+  background-color: #303030;
+  height: 120px;
 }
