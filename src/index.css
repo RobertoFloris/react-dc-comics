@@ -10,7 +10,7 @@ body {
 
 
 header {
-  height: 120px;
+  height: 100px;
 }
 
 .container {
@@ -47,7 +47,7 @@ header a {
 
 .active,
 .headerList a:hover {
-  padding-bottom: 45px;
+  padding-bottom: 35px;
   border-bottom: 5px solid #0282F9;
 }
 
@@ -68,12 +68,15 @@ main {
 }
 
 .blueBand {
-  position: relative;
+  position: absolute;
   z-index: 1;
-  height: 120px;
+  top: 0;
+  height: 100px;
+  width: 100%;
   background-color: #0282F9;
 
   a {
+    color: white;
     display: flex;
     align-items: center;
 
@@ -89,29 +92,28 @@ main a {
 }
 
 .bgFooter {
+  position: absolute;
+  width: 100%;
   background-image: url("img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
-
-  a {
-    color: rgb(124, 124, 124);
-    font-weight: bold;
-    font-size: small;
-    padding: 0;
-    padding-bottom: 20px;
-  }
 }
 
 .link {
-  height: 250px;
+  height: 280px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 300px;
+
+  a {
+    color: #7e7e7e;
+    padding: 1;
+  }
 }
 
 footer {
+  color: white;
   background-color: #303030;
 }
 
@@ -138,6 +140,10 @@ h3 {
 }
 
 .social {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
   background-color: #303030;
-  height: 120px;
 }
