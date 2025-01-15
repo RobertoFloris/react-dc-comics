@@ -1,5 +1,3 @@
-
-
 const BlueBand = () => {
   return (
     <div className="blueBand">
